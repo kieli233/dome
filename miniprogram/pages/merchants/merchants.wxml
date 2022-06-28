@@ -1,0 +1,18 @@
+<!--pages/merchants/merchants.wxml-->
+
+<view class="main">
+    <view class="container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+    {{content}}
+        <image id="img" src="{{imgarr}}" />
+    </view>
+</view>
+<swiper class="categoryList" indicator-dots="true" indicator-color="rgba(228,228,228,1)" indicator-active-color="#FECA49">
+    <block wx:for="{{categoryList}}">
+        <swiper-item>
+                <view class="category-info">
+                    <image src="{{item.src}}" class="category-image"></image>
+                    <view class="category-text">{{item.name}}</view>
+                </view>
+        </swiper-item>
+    </block>
+</swiper>

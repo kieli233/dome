@@ -1,0 +1,19 @@
+<view class="main">
+    <!-- 用户头像部分 -->
+    <view class="user">
+        <text id="user-name">{{username}}</text>
+        <image src="{{userimg}}" id="user-img"/>
+    </view>
+    <!-- 相关设置，用户信息设置 -->
+    <view wx:for="{{setarray}}" wx:key="id" class="set">
+        <view class="set-box">
+            <!-- 地址栏 -->
+            <navigator url="{{item.url}}" class="box">
+                <!-- 图片，可有可无 -->
+                <image src="{{item.img}}" id="box-img"/>
+                <!-- 文字 -->
+                <text id="box-text">{{item.text}}</text>
+            </navigator>
+        </view>
+    </view>
+</view>
