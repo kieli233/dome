@@ -3,7 +3,9 @@
     "pages/main/main",
     "pages/search/search",
     "pages/user/user",
-    "pages/merchants/merchants"
+    "pages/merchants/merchants",
+    "pages/merchants-2/merchants-2",
+    "pages/merchants-3/merchants-3"
   ],
   "window": {
     "backgroundColor": "#f0f8ff",

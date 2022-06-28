@@ -42,7 +42,7 @@
             <view wx:for="{{index_array}}" wx:key="id" class="drop">
                 <view class="dropmenu">
                     <!-- 地址导向 -->
-                    <navigator url="../merchants/merchants">
+                    <navigator url="{{item.url}}">
                         <!-- 图片 -->
                         <image src="{{item.img}}" id="dropmenu-img"/>
                         <!-- 文本文字 -->

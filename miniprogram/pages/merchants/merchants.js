@@ -25,11 +25,11 @@ Page({
         imgarr:"https://www.yinghua233.cn/img/18.jpg",
         categoryList:[
             {
-                src:"../../images/img/home.png",
+                src:"https://www.yinghua233.cn/img/5.jpg",
                 name: "a",
             },
             {
-                src:"../../images/img/home.png",
+                src:"https://www.yinghua233.cn/img/7.jpg",
                 name: "b",
             },{
                 src:"../../images/img/home.png",
@@ -77,17 +77,17 @@ Page({
             moveFlag = false;
           }
         }
-    
+
       },
       // 触摸结束事件
       touchEnd: function (e) {
         moveFlag = true; // 回复滑动事件
-        
+
       },
-    
+
       move2left() {
         var that = this;
-        
+
         that.setData({
           content: "move2left"
         });

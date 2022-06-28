@@ -11,38 +11,6 @@ Page({
      * 页面的初始数据
      */
     data: {
-        array: [{
-            id: 0,
-            index: '商家',
-            img: '../../images/main/merchant.png',  //绝对路径地址
-            url: '../merchants/merchants'
-        },{
-            id: 0,
-            index: '商家',
-            img: '../../images/main/merchant.png',  //绝对路径地址
-            url: '../merchants/merchants'
-        },{
-            id: 0,
-            index: '商家',
-            img: '../../images/main/merchant.png',  //绝对路径地址
-            url: '../merchants/merchants'
-        },{
-            id: 1,
-            index: '找工作',
-            img: '../../images/main/work.png',
-        },{
-            id: 1,
-            index: '找工作',
-            img: '../../images/main/work.png',
-        },{
-            id: 2,
-            index: '临时工',
-            img: '../../images/main/t-work.png',
-        },{
-            id: 2,
-            index: '临时工',
-            img: '../../images/main/t-work.png',
-        }],
         imgUrls: [
             'https://yinghua233.cn/img/img1.jpg',    //图片位置
             'https://yinghua233.cn/img/img2.jpg',
@@ -57,15 +25,18 @@ Page({
         index_array: [
             {
                 text: "委托追寻",  //文本
-                img: "#"    //图片位置
-            },
+                img: "#",    //图片位置
+                url: "../merchants/merchants"  //文件位置,（使用的是绝对路径，不能用相对路径，相对路径可能出现一些奇怪的bug）
+          },
             {
                 text: "委托状态",
-                img: "#"
+                img: "#",
+                url: "../merchants-2/merchants-2"
             },
             {
                 text: "委托生成",
-                img: "#"
+                img: "#",
+                url: "../merchants-3/merchants-3"
             }
         ],
         toView: 'green'
@@ -75,7 +46,7 @@ Page({
           scrollTop: 0
         })
       },
-    
+
     tap() {
         for (let i = 0; i < order.length; ++i) {
             if (order[i] === this.data.toView) {
@@ -87,7 +58,7 @@ Page({
             }
         }
     },
-    
+
     tapMove() {
         this.setData({
             scrollTop: this.data.scrollTop + 10
