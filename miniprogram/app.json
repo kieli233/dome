@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/merchants/merchants"
+  ],
+  "window": {
+    "backgroundColor": "#f0f8ff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor":"#696969",
+    "navigationBarTitleText": "搜源工作者平台",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/main/main",
+        "text": "首页",
+        "iconPath": "/images/img/home.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/images/img/search.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "/images/img/user.png"
+      }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents"
+}

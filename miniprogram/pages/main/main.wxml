@@ -1,0 +1,55 @@
+<!--pages/main/main.wxml-->
+<view class="index">
+    <view class="topnav">
+        <view>
+            <!-- 轮播图部分 -->
+            <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <!-- 使用main.js中的imgUrls数组进行遍历 -->
+                <block wx:for="{{imgUrls}}" wx:key="id">
+                    <navigator>
+                        <swiper-item>
+                            <!-- 图片 -->
+                            <image src="{{item}}" class="slide-image" />
+                        </swiper-item>
+                    </navigator>
+                </block>
+            </swiper>
+        </view>
+    </view>
+    <view class="main">
+        <!-- 导航栏部分 -->
+        <view class="page-section">
+            <view class="page-section-spacing">
+                <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+                    <view id="demo1" class="scroll-view-item_H demo-text-1">
+                        <image src="../../images/main/merchant.png" style="width: 64px; height: 64px;"></image>
+                        <text>商家推荐</text>
+                    </view>
+                    <view id="demo2"  class="scroll-view-item_H demo-text-2">
+                        <image src="../../images/main/work.png" style="width: 64px; height: 64px;"></image>
+                        <text>企业推荐</text>
+                    </view>
+                    <view id="demo3" class="scroll-view-item_H demo-text-3">
+                        <image src="../../images/main/t-work.png" style="width: 64px; height: 64px;"></image>
+                        <text>委托管理</text>
+                    </view>
+                </scroll-view>
+            </view>
+        </view>
+        <!-- 推荐页面部分 -->
+        <view class="menu">
+            <!-- 引用main.js中的index_array对象进行遍历 -->
+            <view wx:for="{{index_array}}" wx:key="id" class="drop">
+                <view class="dropmenu">
+                    <!-- 地址导向 -->
+                    <navigator url="../merchants/merchants">
+                        <!-- 图片 -->
+                        <image src="{{item.img}}" id="dropmenu-img"/>
+                        <!-- 文本文字 -->
+                        <text id="dropmenu-text">{{item.text}}</text>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

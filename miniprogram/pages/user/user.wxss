@@ -1,0 +1,50 @@
+.user{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300rpx;
+    background-color: #eee;
+    margin: 10%;
+    border-radius: 30rpx;
+    position: relative;
+}
+
+#user-name{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 40rpx;
+}
+
+#user-img{
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    width: 200rpx;
+    height: 200rpx;
+    background-color: #acf;
+}
+
+.box{
+    position: relative;
+    width: 90%;
+    height: 50rpx;
+    padding: 20rpx;
+    background-color: #fefefe;
+    left: 2.5%;
+    border-radius: 8px;
+}
+
+#box-img{
+    display: table;
+    position: absolute;
+    width: 25px;
+    height: 25rpx;
+    background-color: #2c4;
+}
+
+#box-text{
+    position: absolute;
+    left: 40px;
+}

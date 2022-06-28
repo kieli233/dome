@@ -1,0 +1,45 @@
+<!--pages/merchants/merchants.wxml-->
+
+<view class="main">
+    <view class="container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+    {{content}}
+        <image id="img" src="{{imgarr}}" />
+    </view>
+</view>
+<swiper class="categoryList" indicator-dots="true" 
+  indicator-color="rgba(228,228,228,1)" 
+  indicator-active-color="#FECA49">
+    <block wx:for="{{categoryList}}" wx:key="">
+    <swiper-item>
+    <block wx:for="{{item}}" wx:key="">
+      <view class="category-info">
+        <image src="{{item.src}}" 
+        class="category-image"></image>
+        <view class="category-text">{{item.name}}</view>
+      </view>
+    </block>
+    </swiper-item>
+    </block>
+</swiper>
+
+<template>
+	<u-action-sheet :list="list" v-model="show"></u-action-sheet>
+</template>
+<script>
+	export default {
+		data() {
+			return {
+				list: [{
+					text: '点赞',
+					color:'blue',
+					fontSize:28
+				},{
+					text: '投币'
+				},{
+					text: '收藏'
+				}],
+				show: true
+			}
+		},
+	}
+</script>

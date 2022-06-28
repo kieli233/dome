@@ -1,0 +1,95 @@
+/* pages/main/main.wxss */
+.topnav{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 320rpx;
+}
+
+.swiper {
+    height: 400rpx;
+    width: 100%;
+}
+
+.swiper-image, .slide-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 20rpx;
+}
+
+.main{
+    width: 100%;
+    height: 180rpx;
+}
+
+.page-section-spacing{
+    margin-top: 10rpx;
+}
+
+.scroll-view_H{
+    white-space: nowrap;
+}
+
+.scroll-view-item{
+    height: 300rpx;
+}
+
+.scroll-view-item_H{
+    display: inline-block;
+    width: 100%;
+    height: 300rpx;
+    /* background-color: #eee; */
+}
+
+#demo1{
+    background-color: rgb(245, 251, 252);
+}
+
+#demo2{
+    background-color: rgb(242, 247, 246);
+}
+
+#demo3{
+    background-color: rgb(251, 252, 250);
+}
+
+.mainnav #img{
+    width: 48px;
+    height: 48px;
+}
+
+.drop{
+    margin: 5%;
+    width: 90%;
+    height: 200rpx;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: -10rpx 10rpx 20rpx 5rpx rgb(247, 83, 124);
+}
+
+.dropmenu{
+    position: relative;
+    border-radius: 40rpx;
+    margin: 10rpx;
+}
+
+.dropmenu #dropmenu-img {
+    display: table;
+    position: absolute; 
+    width: 100%;
+    height: 200rpx;
+    /* border-radius: 40rpx; */
+    z-index: 100;
+}
+
+.dropmenu #dropmenu-text{
+    position: absolute;
+    top: 50rpx;
+    height: 100rpx;
+    left: 10%;
+    z-index: 199;
+}
+page{
+    background-color: rgb(197, 200, 204);
+}
